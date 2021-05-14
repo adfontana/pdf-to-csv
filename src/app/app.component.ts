@@ -19,9 +19,9 @@ export class AppComponent {
     const data = [];
     for (const file of this.files) {
       const item = await this.pdfReaderService.getData(file);
-      data.push(item.join('&#13;&#10;'));
+      data.push(item);
     }
-    this.csvText = data[0].toString();
+    this.csvText = data.toString();
   }
 
   incomingFiles(event: any) {
