@@ -28,7 +28,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "pdf.worker.*",
+                "input": "node_modules/pdfjs-dist/build/",
+                "output": ""
+              }
             ],
             "styles": [
               "src/styles.scss"
