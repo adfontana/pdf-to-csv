@@ -4,5 +4,11 @@
   <div>
     <button (click)="convert()">Convert</button>
   </div>
-  <textarea [rows]="textAreaRows">{{csvText}}</textarea>
+  <div>
+    <button (click)="save()">Save</button>
+  </div>
+  <ng-container *ngIf="csvText !== ''">
+    <label>Raw CSV</label>
+    <textarea [rows]="textAreaRows">{{csvText}}</textarea>
+  </ng-container>
 </div>
