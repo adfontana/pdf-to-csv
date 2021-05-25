@@ -17,3 +17,4 @@ Clone the git repository, then install all the packages:
     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 
 ![](pdftocsv.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
