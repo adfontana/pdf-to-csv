@@ -1,0 +1,40 @@
+button {
+    height: 35px;
+    width: 120px;
+    font-size: medium;
+}
+
+button:enabled {
+    background-color: rgb(0, 92, 92);
+    border: darkcyan;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+div {
+    button {
+        margin-right: 15px;
+    }
+
+    h1 {
+        color: white;
+    }
+}
+
+.center {
+    margin: auto;
+    max-width: 800px;
+}
+
+.file {
+    background-color: rgb(0, 92, 92);
+    border-radius: 0.2rem;
+    color: white;
+    display: inline-block;
+    font-size: medium;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    text-align: center;
+    width: 105px;
+}

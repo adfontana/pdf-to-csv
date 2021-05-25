@@ -26,20 +26,17 @@ export class PdfReaderService {
         pdfPage.getTextContent().then((textContent: any) => {
           const textItems = textContent.items;
           const data: any = {};
-
           // Concatenate the string of the item to the final string
           for (const item of textItems) {
-            if (item.str) {
+            if (item.str !== undefined) {
               const y: any = item.transform['5'];
               (data[y] = data[y] || []).push(item.str.trim());
             }
           }
-
           const result: string[] = [];
           Object.keys(data) // => array of y-positions (type: float)
             .sort((y1, y2) => parseFloat(y2) - parseFloat(y1)) // sort float positions
             .forEach((y) => result.push((data[y] || []).join(';')));
-
           // Solve promise with the text retrieven from the page
           resolve(result);
         });

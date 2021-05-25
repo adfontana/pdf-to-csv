@@ -11,12 +11,12 @@ export class AppComponent {
 
   /** String with all csv content after the conversion */
   csvText = '';
-  // Initialization of the list that will store all the csv data converted from pdf files
+  /** List with the csv data converted from pdf files */ 
   data: string[][] = [];
-  textAreaRows = 0;
-
   /** Files selected in the input */
-  private files: File[] = [];
+  files: File[] = [];
+  /** Count of rows needed in the textarea*/
+  textAreaRows = 0;
 
   constructor(
     /** Service responsible for convert pdf to csv */
@@ -25,6 +25,7 @@ export class AppComponent {
 
   /** Action of the button Convert */
   async convert() {
+    this.files.length > 0
     const dataStr = [];
     this.data = [];
     this.textAreaRows = 0;
@@ -38,13 +39,14 @@ export class AppComponent {
       this.textAreaRows += item.length;
     }
     // Set Return all the data
-    this.csvText = this.data.toString();
+    this.csvText = dataStr.toString();
     this.textAreaRows += 5;
   }
 
   /** Get the files selected on the input file */
   incomingFiles(event: any) {
     this.files = event.target.files;
+    this.csvText = '';
   }
 
   save() {
