@@ -7,7 +7,7 @@ This project was created as an example of how to read pdf files and manipulate i
 ## Dependecies
 The data conversion is done by the [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist) package, and the [xlsx](https://www.npmjs.com/package/xlsx) package is used to save the data as an Excel file.
 
-For `pdfjs-dist` package to work, i needed to add the lines below as an asset in the `angular.json` file 
+For `pdfjs-dist` package to work, was necessary to add the lines below as an asset in the `angular.json` file 
 <pre><code>{
     "glob": "pdf.worker.*",
     "input": "node_modules/pdfjs-dist/build/",
