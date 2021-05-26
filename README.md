@@ -25,4 +25,4 @@ Clone the git repository, then install all the packages:
 ## Usage
     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 
-![](pdftocsv.gif)
+<img src="https://raw.githubusercontent.com/adfontana/pdf-to-csv/master/pdftocsv.gif"/>
