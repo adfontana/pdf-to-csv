@@ -1,13 +1,13 @@
 # PDF to CSV
 
-PDF to CSV is an Angular application that allows to open PDF files and convert the data of those files as CSV data, that could be processed and stored more easily.
+PDF to CSV is an Angular Application that allows to open PDF files and convert the data of those files as CSV data, that could be processed and stored more easily.
 
-This project was created as an example of how read pdf files and manipulate its data in an Angular application project.
+This project was created as an example of how to read pdf files and manipulate its data in an Angular Application project.
 
 ## Dependecies
-The data conversion is done by the package [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist), and the package [xlsx](https://www.npmjs.com/package/xlsx) is used to save the data as an Excel file.
+The data conversion is done by the [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist) package, and the [xlsx](https://www.npmjs.com/package/xlsx) package is used to save the data as an Excel file.
 
-For `pdfjs-dist` to work, i needed to add the lines below as an asset in the `angular.json` file 
+For `pdfjs-dist` package to work, i needed to add the lines below as an asset in the `angular.json` file 
 <pre><code>{
     "glob": "pdf.worker.*",
     "input": "node_modules/pdfjs-dist/build/",
